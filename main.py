@@ -85,6 +85,12 @@ html, body, [class*="css"] {
 
 /* 헤더 제거 */
 header[data-testid="stHeader"] { display: none; }
+
+/* 사이드바 열기/닫기 토글 버튼 완전 제거 */
+[data-testid="collapsedControl"] { display: none !important; }
+[data-testid="stSidebarCollapseButton"] { display: none !important; }
+section[data-testid="stSidebar"] > div:first-child > div:first-child button { display: none !important; }
+button[kind="header"] { display: none !important; }
 .block-container {
     padding-top: 1.2rem !important;
     max-width: 820px;
